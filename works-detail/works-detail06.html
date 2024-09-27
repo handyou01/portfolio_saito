@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasK you design</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ygh1tnu',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="colorbox__wrapper">
+        <div class="colorobx-inner01">
+            <div class="colorbox__detail-img">
+                <img src="../img/tokyo.jpg" alt="観光サイトバナー（架空）">
+            </div>
+        </div>
+
+        <!--pagenation icon-->
+
+        <div class="prevnext-icon__wrapper">
+            <a href="./works-detail05.html" class="prev-icon"></a>
+            <a href="../works.html" class="archive-icon"><img src="../img/works_detail_list_icon.png" alt="">
+            </a>
+            <a href="./works-detail07.html" class="next-icon"></a>
+        </div>
+
+    </div>
+    <script>
+        $(function () {
+            $(".hamburger").click(function () {
+                $(".hamburger").toggleClass("open");
+                $(".header_nav").fadeToggle();
+            });
+        });
+    </script>
+
+</body>
